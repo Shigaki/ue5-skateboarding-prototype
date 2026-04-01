@@ -13,4 +13,9 @@ UCLASS()
 class NGPUNREALDEVTASK_API ANGPPlayerController : public APlayerController
 {
 	GENERATED_BODY()
+
+	public:
+		ANGPPlayerController();
+
+		virtual void BeginPlay() override;
 };
