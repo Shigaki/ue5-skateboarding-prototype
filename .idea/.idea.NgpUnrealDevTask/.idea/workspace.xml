@@ -13,32 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf29f60-6c91-4dcb-a89f-9f0640a9babb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Core/Blueprints/BP_BaseObstacle.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Core/Blueprints/BP_Obstacle_Ramp_01.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Core/NGPPlayerState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Helpers/NGPCvarManager.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Systems/TraversalScoring/NGPObstacleActor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Systems/TraversalScoring/NGPObstacleInterface.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Systems/TraversalScoring/NGPTraversalDeveloperSettings.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Systems/TraversalScoring/NGPTraversalScoreComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Core/NGPPlayerState.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Helpers/NGPCvarManager.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Systems/TraversalScoring/NGPObstacleActor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Systems/TraversalScoring/NGPObstacleInterface.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Systems/TraversalScoring/NGPTraversalDeveloperSettings.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Systems/TraversalScoring/NGPTraversalScoreComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NgpUnrealDevTask/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NgpUnrealDevTask/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequins/Anims/ABP_Skater.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequins/Anims/ABP_Skater.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Mannequins/Anims/AS_Skateboardind_SpeedUp_Inplace.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Characters/Mannequins/Anims/AS_Skateboardind_SpeedUp_Inplace.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Core/Characters/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Core/Characters/BP_PlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Core/GameModes/BP_GM_Gameplay.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Core/GameModes/BP_GM_Gameplay.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Core/Levels/L_Sandbox.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Core/Levels/L_Sandbox.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/NgpUnrealDevTask/NgpUnrealDevTask.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/NgpUnrealDevTask.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Core/NGPPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Private/Core/NGPPlayerCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Core/NGPPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Core/NGPPlayerCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NgpUnrealDevTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NgpUnrealDevTask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Systems/TraversalScoring/NGPTraversalScoreComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/NgpUnrealDevTask/Public/Systems/TraversalScoring/NGPTraversalScoreComponent.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="3BmgBInuItQ3bYCUhga1ER0gVLj" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -62,22 +38,22 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.NgpUnrealDevTask.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.NgpUnrealDevTask.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.NgpUnrealDevTask">
     <configuration name="NgpUnrealDevTask" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -180,7 +156,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -192,6 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1775099522787</updated>
       <workItem from="1775099524429" duration="446000" />
+      <workItem from="1775135778768" duration="640000" />
     </task>
     <servers />
   </component>

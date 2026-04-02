@@ -7,6 +7,9 @@
 #include "GameFramework/Actor.h"
 #include "NGPObstacleActor.generated.h"
 
+/**
+ * Base class for obstacle actors that can reward points.
+ */
 UCLASS()
 class NGPUNREALDEVTASK_API ANGPObstacleActor : public AActor, public INGPObstacleInterface
 {

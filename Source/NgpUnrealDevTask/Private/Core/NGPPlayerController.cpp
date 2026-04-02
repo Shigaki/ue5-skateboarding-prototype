@@ -11,6 +11,9 @@ void ANGPPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
-	PlayerCameraManager->ViewPitchMin = -60.f;
-	PlayerCameraManager->ViewPitchMax = 60.f;
+	if (IsValid(PlayerCameraManager))
+	{
+		PlayerCameraManager->ViewPitchMin = -20.f;
+		PlayerCameraManager->ViewPitchMax = 20.f;
+	}
 }

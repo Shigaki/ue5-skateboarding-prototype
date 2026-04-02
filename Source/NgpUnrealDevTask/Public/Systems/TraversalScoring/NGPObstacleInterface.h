@@ -6,7 +6,6 @@
 #include "UObject/Interface.h"
 #include "NGPObstacleInterface.generated.h"
 
-// This class does not need to be modified.
 UINTERFACE()
 class UNGPObstacleInterface : public UInterface
 {
@@ -15,7 +14,7 @@ class UNGPObstacleInterface : public UInterface
 };
 
 /**
- * 
+ * Obstacles that can reward points must implement this interface.
  */
 class NGPUNREALDEVTASK_API INGPObstacleInterface
 {

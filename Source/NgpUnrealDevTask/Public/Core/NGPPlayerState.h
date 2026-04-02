@@ -20,9 +20,17 @@ class NGPUNREALDEVTASK_API ANGPPlayerState : public APlayerState
 		UPROPERTY(BlueprintAssignable, Category = "Score")
 		FOnScoreChanged OnScoreChanged;
 
+		/**
+		 * Adds a traversal score to the player.
+		 * 
+		 * @param Points The points to add.
+		 */
 		UFUNCTION(BlueprintCallable, Category = "Score")
 		void AddScore(int32 Points);
 
+		/**
+		 * Returns the total score of the player.
+		 */
 		UFUNCTION(BlueprintPure, Category = "Score")
 		int32 GetTotalScore() const
 		{
@@ -30,6 +38,7 @@ class NGPUNREALDEVTASK_API ANGPPlayerState : public APlayerState
 		}
 
 	private:
+		/** The total score of the player. */
 		UPROPERTY(VisibleAnywhere, Category = "Score")
 		int32 TotalScore = 0;
 };

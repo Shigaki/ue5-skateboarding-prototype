@@ -19,6 +19,10 @@ class NGPUNREALDEVTASK_API UNGPTraversalDeveloperSettings : public UDeveloperSet
 		UPROPERTY(Config, EditDefaultsOnly, BlueprintReadOnly, Category = "Obstacle")
 		int32 DefaultObstaclePoints = 100.f;
 
+		/** The default cooldown per obstacle */
+		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Obstacle")
+		float ObstacleCooldown = 3.0f;
+
 		/** The time in seconds that a combo is active */
 		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal")
 		float ComboWindowSeconds = 2.0f;
@@ -27,21 +31,16 @@ class NGPUNREALDEVTASK_API UNGPTraversalDeveloperSettings : public UDeveloperSet
 		UPROPERTY(Config, EditDefaultsOnly, BlueprintReadOnly, Category = "Traversal")
 		int32 MaxComboMultiplier = 8;
 
-		/** The size of the sweep in the X and Y direction */
-		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal|Config")
+		/** The size of the sweep in the X and Y direction. The sweep is a box that is used to check for obstacles. */
+		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal|Trace")
 		float SweepRadius = 40.0f;
 
-		/** The size of the sweep in the Z direction */
-		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal|Config")
+		/** The length of the sweep in the Z direction. The sweep is a box that is used to check for obstacles. */
+		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal|Trace")
 		float SweepLength = 120.0f;
 
 		/** How often the sweep runs while airborne (seconds) */
-		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal|Config")
+		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal|Trace")
 		float SweepInterval = 0.1f;
-
-		/** The default cooldown per obstacle */
-		UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Traversal|Config")
-		float ObstacleCooldown = 3.0f;
-
 		
 };
