@@ -8,6 +8,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Systems/TraversalScoring/NGPTraversalScoreComponent.h"
 
 ANGPPlayerCharacter::ANGPPlayerCharacter()
 {
@@ -18,6 +19,8 @@ ANGPPlayerCharacter::ANGPPlayerCharacter()
 	Camera = CreateDefaultSubobject<UCameraComponent>("Camera");
 	Camera->SetupAttachment(SpringArm);
 	Camera->bUsePawnControlRotation = false;
+
+	TraversalScoreComponent = CreateDefaultSubobject<UNGPTraversalScoreComponent>("TraversalScoreComponent");
 
 	UCharacterMovementComponent* CMC = GetCharacterMovement();
 	CMC->BrakingDecelerationWalking = 0.f; 

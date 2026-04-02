@@ -7,6 +7,7 @@
 #include "InputActionValue.h"
 #include "NGPPlayerCharacter.generated.h"
 
+class UNGPTraversalScoreComponent;
 class UCameraComponent;
 class USpringArmComponent;
 class UInputMappingContext;
@@ -30,6 +31,9 @@ class NGPUNREALDEVTASK_API ANGPPlayerCharacter : public ACharacter
 
 		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 		TObjectPtr<UCameraComponent> Camera;
+
+		UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
+		TObjectPtr<UNGPTraversalScoreComponent> TraversalScoreComponent;
 
 		/** Acceleration */
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Config | Movement")
