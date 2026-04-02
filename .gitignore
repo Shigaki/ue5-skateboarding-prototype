@@ -3,6 +3,8 @@
 
 # Rider user specific files
 .idea/
+*.sln.DotSettings.user
+*.DotSettings.user
 
 # Compiled Object files
 *.slo
