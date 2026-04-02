@@ -52,10 +52,11 @@ void UNGPTraversalViewModel::SetComboMultiplier(int32 NewValue)
 void UNGPTraversalViewModel::SetComboTimeRemaining(float NewValue)
 {
 	if (UE_MVVM_SET_PROPERTY_VALUE(ComboTimeRemaining, NewValue))
-	
+	{
 		UE_MVVM_BROADCAST_FIELD_VALUE_CHANGED(GetComboPercent);
 		UE_MVVM_BROADCAST_FIELD_VALUE_CHANGED(GetIsComboActive);
 	}
+}
 
 void UNGPTraversalViewModel::SetComboTimeMax(float NewValue)
 {
