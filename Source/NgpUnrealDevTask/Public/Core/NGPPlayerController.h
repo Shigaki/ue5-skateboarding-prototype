@@ -6,6 +6,7 @@
 #include "GameFramework/PlayerController.h"
 #include "NGPPlayerController.generated.h"
 
+class UNGPTraversalViewModel;
 /**
  * 
  */

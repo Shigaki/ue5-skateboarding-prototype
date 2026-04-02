@@ -8,7 +8,16 @@ public class NgpUnrealDevTask : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "DeveloperSettings" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core",
+			"CoreUObject",
+			"Engine",
+			"InputCore",
+			"EnhancedInput",
+			"DeveloperSettings",
+			"ModelViewViewModel"
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

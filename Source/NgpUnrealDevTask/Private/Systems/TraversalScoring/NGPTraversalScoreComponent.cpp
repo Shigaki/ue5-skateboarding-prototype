@@ -9,6 +9,8 @@
 #include "Helpers/NGPCvarManager.h"
 #include "Systems/TraversalScoring/NGPObstacleInterface.h"
 #include "Systems/TraversalScoring/NGPTraversalDeveloperSettings.h"
+#include "UI/NGPTraversalViewModel.h"
+#include "UI/NGPVMCollectionSubsystem.h"
 
 #define NGP_OBSTACLE_CHANNEL ECC_GameTraceChannel1
 
@@ -23,6 +25,13 @@ void UNGPTraversalScoreComponent::BeginPlay()
 {
     Super::BeginPlay();
 
+    const UGameInstance* GI = GetWorld()->GetGameInstance();
+    UNGPVMCollectionSubsystem* VMCollection = GI->GetSubsystem<UNGPVMCollectionSubsystem>();
+    TraversalViewModel = VMCollection->GetOrCreateTraversalViewModel();
+
+    const UNGPTraversalDeveloperSettings* Settings = GetDefault<UNGPTraversalDeveloperSettings>();
+    TraversalViewModel->SetComboTimeMax(Settings->ComboWindowSeconds);
+
     if (ACharacter* Owner = Cast<ACharacter>(GetOwner()))
     {
         Owner->MovementModeChangedDelegate.AddDynamic(this, &UNGPTraversalScoreComponent::OnMovementModeChanged);
@@ -36,9 +45,12 @@ void UNGPTraversalScoreComponent::TickComponent(float DeltaTime, ELevelTick Tick
     if (ComboTimeRemaining > 0.0f)
     {
         ComboTimeRemaining -= DeltaTime;
+        const float ClampedTimeRemaining = FMath::Max(ComboTimeRemaining, 0.f);
+        TraversalViewModel->SetComboTimeRemaining(ClampedTimeRemaining);
         if (ComboTimeRemaining <= 0.0f)
         {
             CurrentMultiplier = 1;
+            TraversalViewModel->SetComboMultiplier(1);
             OnComboReset.Broadcast();
         }
     }
@@ -152,6 +164,9 @@ void UNGPTraversalScoreComponent::ScoreObstacle(AActor* Obstacle)
 
     CurrentMultiplier = FMath::Clamp(CurrentMultiplier + 1, 1, Settings->MaxComboMultiplier);
     ComboTimeRemaining = Settings->ComboWindowSeconds;
+    
+    TraversalViewModel->SetComboMultiplier(CurrentMultiplier);
+    TraversalViewModel->SetComboTimeRemaining(ComboTimeRemaining);
 }
 
 bool UNGPTraversalScoreComponent::IsOnCooldown(AActor* Obstacle) const

@@ -26,7 +26,7 @@ class NGPUNREALDEVTASK_API ANGPPlayerState : public APlayerState
 		 * @param Points The points to add.
 		 */
 		UFUNCTION(BlueprintCallable, Category = "Score")
-		void AddScore(int32 Points);
+		void AddScore(const int32 Points);
 
 		/**
 		 * Returns the total score of the player.

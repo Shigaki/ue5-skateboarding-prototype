@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "NGPTraversalScoreComponent.generated.h"
 
+class UNGPTraversalViewModel;
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnScoreEarned, int32, Points, int32, Multiplier);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnComboChanged);
 
@@ -20,6 +21,9 @@ class NGPUNREALDEVTASK_API UNGPTraversalScoreComponent : public UActorComponent
 
 	public:
 		UNGPTraversalScoreComponent();
+
+		UPROPERTY(BlueprintReadOnly, Category = "Traversal|Score")
+		TObjectPtr<UNGPTraversalViewModel> TraversalViewModel;
 
 	protected:
 		virtual void BeginPlay() override;

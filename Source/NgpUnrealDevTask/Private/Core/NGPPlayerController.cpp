@@ -3,6 +3,9 @@
 
 #include "NgpUnrealDevTask/Public/Core/NGPPlayerController.h"
 
+#include "GameFramework/Character.h"
+#include "Systems/TraversalScoring/NGPTraversalScoreComponent.h"
+
 ANGPPlayerController::ANGPPlayerController()
 {
 }

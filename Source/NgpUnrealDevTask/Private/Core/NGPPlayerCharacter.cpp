@@ -35,7 +35,6 @@ ANGPPlayerCharacter::ANGPPlayerCharacter()
 void ANGPPlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 void ANGPPlayerCharacter::Tick(float DeltaTime)
