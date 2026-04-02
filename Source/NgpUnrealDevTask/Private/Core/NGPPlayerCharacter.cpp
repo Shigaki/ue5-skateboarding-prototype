@@ -41,7 +41,7 @@ void ANGPPlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	FVector Velocity = GetCharacterMovement()->Velocity;
+	const FVector Velocity = GetCharacterMovement()->Velocity;
 	const float Speed = Velocity.Size2D();
 
 	const float CurrentDrag = bIsBraking ? BrakeDrag : CoastDrag;
@@ -51,7 +51,6 @@ void ANGPPlayerCharacter::Tick(float DeltaTime)
 	const float HorizontalSpeed = HorizontalVel.Size();
 	if (HorizontalSpeed > MaxSpeed)
 	{
-		// Ease back to MaxSpeed rather than hard-clamping — feels less 'wall-y'
 		HorizontalVel = HorizontalVel.GetSafeNormal() * FMath::FInterpTo(HorizontalSpeed, MaxSpeed, DeltaTime, 6.f);
 	}
 
@@ -115,7 +114,7 @@ void ANGPPlayerCharacter::HandleTurn(const FInputActionValue& Value)
 
 	if (Speed > 50.f)
 	{
-		FVector Vel = GetCharacterMovement()->Velocity;
+		const FVector Vel = GetCharacterMovement()->Velocity;
 		FVector HorizVel = FVector(Vel.X, Vel.Y, 0.f);
 
 		HorizVel = HorizVel.RotateAngleAxis(TurnDelta * CarveRatio, FVector::UpVector);

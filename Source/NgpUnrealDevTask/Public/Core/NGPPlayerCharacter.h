@@ -20,7 +20,7 @@ class NGPUNREALDEVTASK_API ANGPPlayerCharacter : public ACharacter
 
 	public:
 		ANGPPlayerCharacter();
-
+	
 	protected:
 		virtual void BeginPlay() override;
 
@@ -62,10 +62,6 @@ class NGPUNREALDEVTASK_API ANGPPlayerCharacter : public ACharacter
 		/** High speed turns */
 		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Config | Movement")
 		float TurnSpeedAtMax = 55.f;
-
-		/** Initial burst of movement */
-		UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Config | Movement")
-		float PushImpulse = 420.f;
 
 		bool bIsBraking = false;
 

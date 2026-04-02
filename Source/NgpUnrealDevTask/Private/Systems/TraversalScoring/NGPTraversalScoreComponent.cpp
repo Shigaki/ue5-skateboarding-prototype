@@ -76,14 +76,14 @@ void UNGPTraversalScoreComponent::OnMovementModeChanged(ACharacter* Character, E
 
     if (bAirborne && !bIsAirborne)
     {
-        // Just became airborne — start fresh
+        // Jump Init
         bIsAirborne = true;
         PendingObstacles.Empty();
         SweepAccumulator = 0.f;
     }
     else if (!bAirborne && bIsAirborne)
     {
-        // Just landed — score everything we flew over
+        // Jump End
         bIsAirborne = false;
 
         for (AActor* Obstacle : PendingObstacles)
@@ -121,7 +121,8 @@ void UNGPTraversalScoreComponent::TickSweep()
 
     if (CVarTraversalDebug.GetValueOnGameThread())
     {
-        DrawDebugLine(GetWorld(), Start, End, FColor::Yellow, false, Settings->SweepInterval);
+        DrawDebugSphere(GetWorld(), Start, Settings->SweepRadius, 10, FColor::Yellow, false, Settings->SweepInterval);
+        DrawDebugLine(GetWorld(), Start, End, FColor::Emerald, false, Settings->SweepInterval);
     }
 
     for (const FHitResult& Hit : Hits)

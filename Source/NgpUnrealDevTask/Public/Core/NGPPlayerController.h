@@ -17,6 +17,8 @@ class NGPUNREALDEVTASK_API ANGPPlayerController : public APlayerController
 
 	public:
 		ANGPPlayerController();
-
+	
+	protected:
 		virtual void BeginPlay() override;
+
 };
