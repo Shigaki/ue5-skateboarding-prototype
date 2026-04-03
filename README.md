@@ -5,6 +5,10 @@
 A skateboarding gameplay prototype developed in Unreal Engine 5 as part of a technical assessment.  
 The project focuses on movement feel, traversal-based scoring, and clean UI architecture.
 
+## 🕹️ Playable Build
+
+[Skateboarding-Prototype.zip](https://drive.google.com/file/d/1LiOi3EsuHKhmFVS76a19eMI89GQ_HxSs/view?usp=sharing)
+
 ---
 
 ## 🎮 Controls
