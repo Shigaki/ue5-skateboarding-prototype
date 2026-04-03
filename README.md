@@ -1,6 +1,6 @@
 # UE5 Skateboarding Prototype
 
-<img width="1936" height="1048" alt="ScreenShot00001" src="https://github.com/user-attachments/assets/cf8b1a73-35fc-4227-8558-91ddced1ac87" />
+![skateboard-prototype](https://github.com/user-attachments/assets/c7f1e2bd-6112-41a7-aaac-ff191a9f43f7)
 
 A skateboarding gameplay prototype developed in Unreal Engine 5 as part of a technical assessment.  
 The project focuses on movement feel, traversal-based scoring, and clean UI architecture.
