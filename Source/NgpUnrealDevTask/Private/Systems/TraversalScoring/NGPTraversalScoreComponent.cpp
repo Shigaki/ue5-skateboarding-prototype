@@ -118,12 +118,13 @@ void UNGPTraversalScoreComponent::TickSweep()
 
     GetWorld()->SweepMultiByChannel(Hits, Start, End, FQuat::Identity,ECC_Visibility, Sphere, Params);
 
-
+#if !UE_BUILD_SHIPPING
     if (CVarTraversalDebug.GetValueOnGameThread())
     {
         DrawDebugSphere(GetWorld(), Start, Settings->SweepRadius, 10, FColor::Yellow, false, Settings->SweepInterval);
         DrawDebugLine(GetWorld(), Start, End, FColor::Emerald, false, Settings->SweepInterval);
     }
+#endif // !UE_BUILD_SHIPPING
 
     for (const FHitResult& Hit : Hits)
     {
